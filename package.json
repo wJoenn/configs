@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "build": "node ./node_modules/eslint/bin/eslint.js --print-config ./.eslintrc > dist/index.json"
   },
   "devDependencies": {
     "@stylistic/eslint-plugin-js": "^1.7.0",
