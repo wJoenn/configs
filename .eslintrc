@@ -5,7 +5,9 @@
     "es2024": true,
     "node": true
   },
-  "extends": [],
+  "extends": [
+    "./configs/eslint.config.js.json"
+  ],
   "ignorePatterns": [
     "node_modules"
   ],
