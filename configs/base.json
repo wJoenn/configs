@@ -14,6 +14,7 @@
   },
   "plugins": [
     "import",
+    "promise",
     "@stylistic/js"
   ],
   "rules": {
@@ -269,6 +270,22 @@
     "import/order": ["error", { "groups": ["type", "builtin", "external", "internal"] }],
     "import/prefer-default-export": "off",
     "import/unambiguous": "off",
+
+    "promise/always-return": "error",
+    "promise/avoid-new": "off",
+    "promise/catch-or-return": "error",
+    "promise/no-callback-in-promise": "off",
+    "promise/no-multiple-resolved": "error",
+    "promise/no-native": "off",
+    "promise/no-nesting": "error",
+    "promise/no-new-statics": "error",
+    "promise/no-promise-in-callback": "error",
+    "promise/no-return-in-finally": "error",
+    "promise/no-return-wrap": "error",
+    "promise/param-names": "error",
+    "promise/prefer-await-to-callbacks": "error",
+    "promise/prefer-await-to-then": "error",
+    "promise/valid-names": "error",
 
     "@stylistic/js/array-bracket-newline": ["error", "consistent"],
     "@stylistic/js/array-bracket-spacing": ["error", "never"],
