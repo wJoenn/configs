@@ -3,11 +3,14 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "lint": "eslint .",
-    "build": "node ./node_modules/eslint/bin/eslint.js --print-config ./.eslintrc > dist/index.json"
+    "lint": "eslint . --ext .js,.ts",
+    "build": "eslint --print-config .eslintrc > dist/index.json"
   },
   "devDependencies": {
     "@stylistic/eslint-plugin-js": "^1.7.0",
+    "@stylistic/eslint-plugin-ts": "^1.7.0",
+    "@typescript-eslint/eslint-plugin": "^7.3.1",
+    "@typescript-eslint/parser": "^7.3.1",
     "eslint": "^8.57.0",
     "eslint-plugin-import": "^2.29.1"
   }

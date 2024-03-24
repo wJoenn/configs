@@ -1,6 +1,5 @@
 {
-  "root": true,
   "extends": [
-    "./configs/base.json"
+    "./configs/typescript.json"
   ]
 }

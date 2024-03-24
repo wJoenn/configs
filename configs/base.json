@@ -5,6 +5,7 @@
     "node": true
   },
   "ignorePatterns": [
+    "dist",
     "node_modules"
   ],
   "parserOptions": {
@@ -143,6 +144,7 @@
     "no-restricted-properties": "off",
     "no-restricted-syntax": "off",
     "no-return-assign": ["error", "always"],
+    "no-return-await": "off",
     "no-script-url": "error",
     "no-self-assign": "error",
     "no-self-compare": "error",
