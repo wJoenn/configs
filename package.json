@@ -3,12 +3,11 @@
   "type": "module",
   "version": "0.0.1",
   "files": [
-    "dist/index.json"
+    "typescript.json"
   ],
   "scripts": {
     "lint": "eslint . --ext .js,.ts",
-    "build": "eslint --print-config .eslintrc > dist/index.json",
-    "publish": "pnpm build && npm publish --access public"
+    "release": "bun run deploy.ts"
   },
   "dependencies": {
     "@stylistic/eslint-plugin-js": "^1.7.0",
@@ -17,6 +16,11 @@
     "@typescript-eslint/parser": "^7.3.1",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-promise": "^6.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "bun": "^1.0.35",
+    "tsconfigs": "^5.0.0"
   },
   "peerDependencies": {
     "eslint": ">= 8.57.0"
