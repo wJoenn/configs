@@ -6,8 +6,9 @@
     "typescript.json"
   ],
   "scripts": {
+    "build": "bun run bin/build.ts",
     "lint": "eslint . --ext .js,.ts",
-    "release": "bun run deploy.ts"
+    "release": "bun run bin/release.ts"
   },
   "dependencies": {
     "@stylistic/eslint-plugin-js": "^1.7.0",

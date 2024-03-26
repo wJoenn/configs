@@ -1,18 +1,27 @@
-{
-  "extends": [
-    "./base.json"
+import type { Config } from "../types"
+import base from "./base.ts"
+
+const config: Config = {
+  extends: [
+    base
   ],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "project": true
+  overrides: [
+    {
+      files: ["*.d.ts"],
+      rules: {
+        "@typescript-eslint/consistent-type-definitions": "off"
+      }
+    }
+  ],
+  parser: "@typescript-eslint/parser",
+  parserOptions: {
+    project: true
   },
-  "plugins": [
+  plugins: [
     "@stylistic/ts",
     "@typescript-eslint"
   ],
-  "rules": {
-    "class-methods-use-this": "off",
-    "consistent-return": "off",
+  rules: {
     "default-param-last": "off",
     "dot-notation": "off",
     "no-empty-function": "off",
@@ -48,9 +57,9 @@
     "@stylistic/js/space-infix-ops": "off",
 
     "@stylistic/ts/block-spacing": "error",
-    "@stylistic/ts/brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+    "@stylistic/ts/brace-style": ["error", "1tbs", { allowSingleLine: true }],
     "@stylistic/ts/comma-dangle": ["error", "never"],
-    "@stylistic/ts/comma-spacing": ["error", { "before": false, "after": true }],
+    "@stylistic/ts/comma-spacing": ["error", { after: true, before: false }],
     "@stylistic/ts/function-call-spacing": ["error", "never"],
     "@stylistic/ts/indent": "off",
     "@stylistic/ts/key-spacing": "error",
@@ -58,8 +67,8 @@
     "@stylistic/ts/lines-around-comment": "off",
     "@stylistic/ts/lines-between-class-members": "off",
     "@stylistic/ts/member-delimiter-style": ["error", {
-      "multiline": { "delimiter": "none" },
-      "singleline": { "delimiter": "comma" }
+      multiline: { delimiter: "none" },
+      singleline: { delimiter: "comma" }
     }],
     "@stylistic/ts/no-extra-parens": "error",
     "@stylistic/ts/no-extra-semi": "error",
@@ -69,15 +78,15 @@
     "@stylistic/ts/semi": ["error", "never"],
     "@stylistic/ts/space-before-blocks": "error",
     "@stylistic/ts/space-before-function-paren": ["error", {
-      "anonymous": "never",
-      "named": "never",
-      "asyncArrow": "always"
+      anonymous: "never",
+      asyncArrow: "always",
+      named: "never"
     }],
     "@stylistic/ts/space-infix-ops": "error",
     "@stylistic/ts/type-annotation-spacing": "error",
 
     "@typescript-eslint/adjacent-overload-signatures": "error",
-    "@typescript-eslint/array-type": ["error", { "readonly": "generic" }],
+    "@typescript-eslint/array-type": ["error", { readonly: "generic" }],
     "@typescript-eslint/await-thenable": "error",
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/ban-tslint-comment": "off",
@@ -89,8 +98,8 @@
     "@typescript-eslint/consistent-indexed-object-style": "error",
     "@typescript-eslint/consistent-return": "off",
     "@typescript-eslint/consistent-type-assertions": ["error", {
-      "assertionStyle": "as",
-      "objectLiteralTypeAssertions": "never"
+      assertionStyle: "as",
+      objectLiteralTypeAssertions: "never"
     }],
     "@typescript-eslint/consistent-type-definitions": ["error", "type"],
     "@typescript-eslint/consistent-type-exports": "error",
@@ -131,12 +140,12 @@
     "@typescript-eslint/no-magic-numbers": "off",
     "@typescript-eslint/no-meaningless-void-operator": "error",
     "@typescript-eslint/no-misused-new": "error",
-    "@typescript-eslint/no-misused-promises": ["error", { "checksVoidReturn": false }],
+    "@typescript-eslint/no-misused-promises": ["error", { checksVoidReturn: false }],
     "@typescript-eslint/no-mixed-enums": "error",
     "@typescript-eslint/no-namespace": "error",
     "@typescript-eslint/no-non-null-asserted-nullish-coalescing": "error",
     "@typescript-eslint/no-non-null-asserted-optional-chain": "error",
-    "@typescript-eslint/no-non-null-assertion": "error",
+    "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/no-redeclare": "off",
     "@typescript-eslint/no-redundant-type-constituents": "error",
     "@typescript-eslint/no-require-imports": "error",
@@ -160,17 +169,17 @@
     "@typescript-eslint/no-unsafe-unary-minus": "error",
     "@typescript-eslint/no-unused-expressions": "error",
     "@typescript-eslint/no-unused-vars": ["error", {
-      "argsIgnorePattern": "^_",
-      "ignoreRestSiblings": true
+      argsIgnorePattern: "^_",
+      ignoreRestSiblings: true
     }],
-    "@typescript-eslint/no-use-before-define": ["error", { "variables": false }],
+    "@typescript-eslint/no-use-before-define": ["error", { variables: false }],
     "@typescript-eslint/no-useless-constructor": "error",
     "@typescript-eslint/no-useless-empty-export": "error",
     "@typescript-eslint/no-useless-template-literals": "error",
     "@typescript-eslint/no-var-requires": "error",
     "@typescript-eslint/non-nullable-type-assertion-style": "error",
     "@typescript-eslint/parameter-properties": ["error", {
-      "allow": [
+      allow: [
         "private",
         "private readonly",
         "protected",
@@ -182,9 +191,9 @@
     }],
     "@typescript-eslint/prefer-as-const": "error",
     "@typescript-eslint/prefer-destructuring": ["error", {
-      "object": true
+      object: true
     }, {
-      "enforceForDeclarationWithTypeAnnotation": true
+      enforceForDeclarationWithTypeAnnotation: true
     }],
     "@typescript-eslint/prefer-enum-initializers": "error",
     "@typescript-eslint/prefer-find": "error",
@@ -203,7 +212,7 @@
     "@typescript-eslint/prefer-return-this-type": "error",
     "@typescript-eslint/prefer-string-starts-ends-with": "error",
     "@typescript-eslint/prefer-ts-expect-error": "error",
-    "@typescript-eslint/promise-function-async": ["error", { "checkArrowFunctions": false }],
+    "@typescript-eslint/promise-function-async": ["error", { checkArrowFunctions: false }],
     "@typescript-eslint/require-array-sort-compare": "error",
     "@typescript-eslint/require-await": "error",
     "@typescript-eslint/restrict-plus-operands": "error",
@@ -217,13 +226,7 @@
     "@typescript-eslint/unbound-method": "error",
     "@typescript-eslint/unified-signatures": "error",
     "@typescript-eslint/use-unknown-in-catch-callback-variable": "error"
-  },
-  "overrides": [
-    {
-      "files": ["*.d.ts"],
-      "rules": {
-        "@typescript-eslint/consistent-type-definitions": "off"
-      }
-    }
-  ]
+  }
 }
+
+export default config

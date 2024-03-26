@@ -1,3 +1,7 @@
 {
-  "extends": "tsconfigs/nodejs-module"
+  "extends": "tsconfigs/nodejs-module",
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "noEmit": true
+  }
 }

@@ -1,24 +1,26 @@
-{
-  "env": {
-    "browser": true,
-    "es2024": true,
-    "jest": true,
-    "node": true
+import type { Config } from "../types"
+
+const config: Config = {
+  env: {
+    browser: true,
+    es2024: true,
+    jest: true,
+    node: true
   },
-  "ignorePatterns": [
+  ignorePatterns: [
     "dist",
     "node_modules"
   ],
-  "parserOptions": {
-    "ecmaVersion": "latest",
-    "sourceType": "module"
+  parserOptions: {
+    ecmaVersion: "latest",
+    sourceType: "module"
   },
-  "plugins": [
+  plugins: [
     "import",
     "promise",
     "@stylistic/js"
   ],
-  "rules": {
+  rules: {
     "array-callback-return": "error",
     "arrow-body-style": ["error", "as-needed"],
     "block-scoped-var": "error",
@@ -33,7 +35,7 @@
     "default-case-last": "error",
     "default-param-last": "error",
     "dot-notation": "error",
-    "eqeqeq": ["error", "always", { "null": "never" }],
+    "eqeqeq": ["error", "always", { null: "never" }],
     "for-direction": "error",
     "func-name-matching": "error",
     "func-names": ["error", "as-needed"],
@@ -56,8 +58,8 @@
     "max-statements": "off",
     "multiline-comment-style": "off",
     "new-cap": ["error", {
-      "capIsNew": false,
-      "newIsCap": true
+      capIsNew: false,
+      newIsCap: true
     }],
     "no-alert": "error",
     "no-array-constructor": "off",
@@ -86,7 +88,7 @@
     "no-duplicate-case": "error",
     "no-duplicate-imports": "error",
     "no-else-return": "error",
-    "no-empty": ["error", { "allowEmptyCatch": true }],
+    "no-empty": ["error", { allowEmptyCatch: true }],
     "no-empty-character-class": "error",
     "no-empty-function": "error",
     "no-empty-pattern": "error",
@@ -159,13 +161,13 @@
     "no-ternary": "off",
     "no-this-before-super": "error",
     "no-throw-literal": "error",
-    "no-undef": ["error", { "typeof": true }],
+    "no-undef": ["error", { typeof: true }],
     "no-undef-init": "error",
     "no-undefined": "off",
     "no-underscore-dangle": "off",
     "no-unexpected-multiline": "error",
     "no-unmodified-loop-condition": "error",
-    "no-unneeded-ternary": ["error", { "defaultAssignment": false }],
+    "no-unneeded-ternary": ["error", { defaultAssignment: false }],
     "no-unreachable": "error",
     "no-unreachable-loop": "error",
     "no-unsafe-finally": "error",
@@ -175,10 +177,10 @@
     "no-unused-labels": "error",
     "no-unused-private-class-members": "error",
     "no-unused-vars": ["error", {
-      "argsIgnorePattern": "^_",
-      "ignoreRestSiblings": true
+      argsIgnorePattern: "^_",
+      ignoreRestSiblings: true
     }],
-    "no-use-before-define": ["error", { "variables": false }],
+    "no-use-before-define": ["error", { variables: false }],
     "no-useless-backreference": "error",
     "no-useless-call": "error",
     "no-useless-catch": "error",
@@ -197,7 +199,7 @@
     "operator-assignment": ["error", "always"],
     "prefer-arrow-callback": "error",
     "prefer-const": "error",
-    "prefer-destructuring": ["error", { "object": true }],
+    "prefer-destructuring": ["error", { object: true }],
     "prefer-exponentiation-operator": "error",
     "prefer-named-capture-group": "error",
     "prefer-numeric-literals": "error",
@@ -215,8 +217,8 @@
     "require-yield": "error",
     "sort-imports": "off",
     "sort-keys": ["error", "asc", {
-      "allowLineSeparatedGroups": true,
-      "natural": true
+      allowLineSeparatedGroups: true,
+      natural: true
     }],
     "sort-vars": "error",
     "strict": "off",
@@ -238,7 +240,7 @@
     "import/max-dependencies": "off",
     "import/named": "error",
     "import/namespace": "error",
-    "import/newline-after-import": ["error", { "considerComments": true }],
+    "import/newline-after-import": ["error", { considerComments: true }],
     "import/no-absolute-path": "error",
     "import/no-amd": "error",
     "import/no-anonymous-default-export": "off",
@@ -249,12 +251,12 @@
     "import/no-duplicates": "error",
     "import/no-dynamic-require": "error",
     "import/no-empty-named-blocks": "error",
-    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "import/no-extraneous-dependencies": ["error", { devDependencies: true }],
     "import/no-import-module-exports": "error",
     "import/no-internal-modules": "off",
     "import/no-mutable-exports": "error",
-    "import/no-named-as-default-member": "error",
     "import/no-named-as-default": "error",
+    "import/no-named-as-default-member": "error",
     "import/no-named-default": "error",
     "import/no-named-export": "off",
     "import/no-namespace": "off",
@@ -268,7 +270,7 @@
     "import/no-unused-modules": "error",
     "import/no-useless-path-segments": "error",
     "import/no-webpack-loader-syntax": "error",
-    "import/order": ["error", { "groups": ["type", "builtin", "external", "internal"] }],
+    "import/order": ["error", { groups: ["type", "builtin", "external", "internal"] }],
     "import/prefer-default-export": "off",
     "import/unambiguous": "off",
 
@@ -294,9 +296,9 @@
     "@stylistic/js/arrow-parens": ["error", "as-needed"],
     "@stylistic/js/arrow-spacing": "error",
     "@stylistic/js/block-spacing": "error",
-    "@stylistic/js/brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+    "@stylistic/js/brace-style": ["error", "1tbs", { allowSingleLine: true }],
     "@stylistic/js/comma-dangle": ["error", "never"],
-    "@stylistic/js/comma-spacing": ["error", { "before": false, "after": true }],
+    "@stylistic/js/comma-spacing": ["error", { after: true, before: false }],
     "@stylistic/js/comma-style": ["error", "last"],
     "@stylistic/js/computed-property-spacing": ["error", "never"],
     "@stylistic/js/dot-location": ["error", "property"],
@@ -313,8 +315,8 @@
     "@stylistic/js/lines-around-comment": "off",
     "@stylistic/js/lines-between-class-members": "off",
     "@stylistic/js/max-len": ["error", {
-      "code": 120,
-      "ignoreUrls": true
+      code: 120,
+      ignoreUrls: true
     }],
     "@stylistic/js/max-statements-per-line": "off",
     "@stylistic/js/multiline-ternary": ["error", "never"],
@@ -327,14 +329,14 @@
     "@stylistic/js/no-mixed-operators": "error",
     "@stylistic/js/no-mixed-spaces-and-tabs": "error",
     "@stylistic/js/no-multi-spaces": "error",
-    "@stylistic/js/no-multiple-empty-lines": ["error", { "max": 1 }],
-    "@stylistic/js/no-tabs": ["error", { "allowIndentationTabs": true }],
+    "@stylistic/js/no-multiple-empty-lines": ["error", { max: 1 }],
+    "@stylistic/js/no-tabs": ["error", { allowIndentationTabs: true }],
     "@stylistic/js/no-trailing-spaces": "error",
     "@stylistic/js/no-whitespace-before-property": "error",
     "@stylistic/js/nonblock-statement-body-position": "off",
     "@stylistic/js/object-curly-newline": "off",
     "@stylistic/js/object-curly-spacing": ["error", "always"],
-    "@stylistic/js/object-property-newline": ["error", { "allowAllPropertiesOnSameLine": true }],
+    "@stylistic/js/object-property-newline": ["error", { allowAllPropertiesOnSameLine: true }],
     "@stylistic/js/one-var-declaration-per-line": "off",
     "@stylistic/js/operator-linebreak": ["error", "before"],
     "@stylistic/js/padded-blocks": ["error", "never"],
@@ -347,9 +349,9 @@
     "@stylistic/js/semi-style": ["error", "last"],
     "@stylistic/js/space-before-blocks": "error",
     "@stylistic/js/space-before-function-paren": ["error", {
-      "anonymous": "never",
-      "named": "never",
-      "asyncArrow": "always"
+      anonymous: "never",
+      asyncArrow: "always",
+      named: "never"
     }],
     "@stylistic/js/space-in-parens": ["error", "never"],
     "@stylistic/js/space-infix-ops": "error",
@@ -363,3 +365,5 @@
     "@stylistic/js/yield-star-spacing": ["error", "after"]
   }
 }
+
+export default config
