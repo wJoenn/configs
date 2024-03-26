@@ -6,6 +6,7 @@ import { configs, type ConfigName } from "../configs/index.ts"
 const EMPTY_CONFIG: Config = {
   env: {},
   ignorePatterns: [],
+  overrides: [],
   parser: undefined,
   parserOptions: {},
   plugins: [],
@@ -22,6 +23,12 @@ const buildEnv = (config: Config, eslintrc: Config) => {
 const buildIgnorePatterns = (config: Config, eslintrc: Config) => {
   if (config.ignorePatterns) {
     eslintrc.ignorePatterns!.push(...config.ignorePatterns)
+  }
+}
+
+const buildOverrides = (config: Config, eslintrc: Config) => {
+  if (config.overrides) {
+    eslintrc.overrides!.push(...config.overrides)
   }
 }
 
@@ -52,6 +59,7 @@ export const createConfig = (name: ConfigName, output?: string) => {
   extendedConfig.forEach(config => {
     buildEnv(config, eslintrc)
     buildIgnorePatterns(config, eslintrc)
+    buildOverrides(config, eslintrc)
     buildParser(config, eslintrc)
     buildParserOptions(config, eslintrc)
     buildPlugins(config, eslintrc)
