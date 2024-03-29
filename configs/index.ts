@@ -1,5 +1,6 @@
-import typescript from "./typescript.ts"
+export { default as typescript } from "./typescript.js"
 
-export const configs = { typescript }
+// const configs = { typescript }
+// export typescript
 
-export type ConfigName = keyof typeof configs
+// export type ConfigName = keyof typeof configs

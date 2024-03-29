@@ -1,11 +1,13 @@
 {
   "compilerOptions": {
-    "allowImportingTsExtensions": true,
     "allowSyntheticDefaultImports": true,
     "module": "ESNext",
     "moduleResolution": "Bundler",
-    "noEmit": true,
+    "outDir": "dist",
     "strictNullChecks": true,
     "target": "ESNext"
-  }
+  },
+  "include": [
+    "./configs/index.ts"
+  ]
 }

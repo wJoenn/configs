@@ -1,25 +1,33 @@
-import type { Config } from "../types"
+import type { Linter, ESLint } from "eslint"
 
-const config: Config = {
-  env: {
-    browser: true,
-    es2024: true,
-    jest: true,
-    node: true
-  },
-  ignorePatterns: [
+import importPlugin from "eslint-plugin-import"
+import promise from "eslint-plugin-promise"
+import stylysticJS from "@stylistic/eslint-plugin-js"
+import globals from "globals"
+
+const { browser, jest, node } = globals
+
+const config: Linter.FlatConfig = {
+  ignores: [
     "dist",
     "node_modules"
   ],
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module"
+  languageOptions: {
+    globals: {
+      ...browser,
+      ...jest,
+      ...node
+    },
+    parserOptions: {
+      ecmaVersion: "latest",
+      sourceType: "module"
+    }
   },
-  plugins: [
-    "import",
-    "promise",
-    "@stylistic/js"
-  ],
+  plugins: {
+    "@stylistic/js": stylysticJS,
+    "import": importPlugin as ESLint.Plugin,
+    "promise": promise as ESLint.Plugin
+  },
   rules: {
     "array-callback-return": "error",
     "arrow-body-style": ["error", "as-needed"],
@@ -363,6 +371,11 @@ const config: Config = {
     "@stylistic/js/wrap-iife": ["error", "inside"],
     "@stylistic/js/wrap-regex": "off",
     "@stylistic/js/yield-star-spacing": ["error", "after"]
+  },
+  settings: {
+    "import/parsers": {
+      espree: [".js"]
+    }
   }
 }
 
