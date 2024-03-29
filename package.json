@@ -21,7 +21,8 @@
   "devDependencies": {
     "@types/node": "^20.11.30",
     "bun": "^1.0.35",
-    "tsconfigs": "^5.0.0"
+    "tsconfigs": "^5.0.0",
+    "typescript": "^5.4.3"
   },
   "peerDependencies": {
     "eslint": ">= 8.57.0"
