@@ -34,9 +34,6 @@ devDependencies:
   bun:
     specifier: ^1.0.35
     version: 1.0.35
-  tsconfigs:
-    specifier: ^5.0.0
-    version: 5.0.0
   typescript:
     specifier: ^5.4.3
     version: 5.4.3
@@ -1821,10 +1818,6 @@ packages:
       minimist: 1.2.8
       strip-bom: 3.0.0
     dev: false
-
-  /tsconfigs@5.0.0:
-    resolution: {integrity: sha512-mIURkwOBBtghy179f/uhXoJOJzAG4Zpvg5+PhG7m8P6BuQx72lrQ9qbFbZkr4svUX85BoHraRX1UYfg67VAjIw==}
-    dev: true
 
   /type-check@0.4.0:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
