@@ -9,8 +9,8 @@ const { browser, jest, node } = globals
 
 const config: Linter.FlatConfig = {
   ignores: [
-    "dist",
-    "node_modules"
+    "dist/**/*",
+    "node_modules/**/*"
   ],
   languageOptions: {
     globals: {
