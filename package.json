@@ -13,7 +13,7 @@
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "lint": "eslint .",
-    "release": "bun run bin/release.ts"
+    "release": "pnpm build && pnpm publish"
   },
   "dependencies": {
     "@stylistic/eslint-plugin-js": "^1.7.0",
