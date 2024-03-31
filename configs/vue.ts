@@ -8,12 +8,14 @@ import typescript from "./typescript.js"
 const config: Linter.FlatConfig[] = [
   ...typescript as Linter.FlatConfig[],
   {
-    files: ["**/*.vue"],
     ignores: [
       ".nuxt",
       ".outpout",
       ".vue"
-    ],
+    ]
+  },
+  {
+    files: ["**/*.vue"],
     languageOptions: {
       parser: vueParser,
       parserOptions: {
@@ -84,7 +86,7 @@ const config: Linter.FlatConfig[] = [
         ignoreUrls: true
       }],
       "vue/max-lines-per-block": "off",
-      "vue/multi-word-component-names": "error",
+      "vue/multi-word-component-names": "off",
       "vue/multiline-html-element-content-newline": "error",
       "vue/multiline-ternary": ["error", "never"],
       "vue/mustache-interpolation-spacing": "error",
@@ -271,7 +273,9 @@ const config: Linter.FlatConfig[] = [
 
       "@stylistic/js/function-call-spacing": "off",
       "@stylistic/js/indent": "off",
-      "@stylistic/js/max-len": "off"
+      "@stylistic/js/max-len": "off",
+
+      "@typescript-eslint/prefer-function-type": "off"
     }
   }
 ]

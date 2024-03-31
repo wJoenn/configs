@@ -350,7 +350,7 @@ const config: Linter.FlatConfig = {
     "@stylistic/js/padded-blocks": ["error", "never"],
     "@stylistic/js/padding-line-between-statements": "off",
     "@stylistic/js/quote-props": ["error", "consistent-as-needed"],
-    "@stylistic/js/quotes": ["error", "double"],
+    "@stylistic/js/quotes": ["error", "double", { avoidEscape: true }],
     "@stylistic/js/rest-spread-spacing": ["error", "never"],
     "@stylistic/js/semi": ["error", "never"],
     "@stylistic/js/semi-spacing": "error",
