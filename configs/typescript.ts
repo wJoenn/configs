@@ -10,7 +10,7 @@ export default tseslint.config(
       parser: tseslint.parser,
       parserOptions: {
         extraFileExtensions: [".vue"],
-        project: ["./tsconfig.*.json"]
+        project: ["./tsconfig.json", "./tsconfig.*.json"]
       }
     },
     plugins: {
