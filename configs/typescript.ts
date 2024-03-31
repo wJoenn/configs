@@ -70,7 +70,7 @@ export default tseslint.config(
       "@stylistic/ts/no-extra-semi": "error",
       "@stylistic/ts/object-curly-spacing": ["error", "always"],
       "@stylistic/ts/padding-line-between-statements": "off",
-      "@stylistic/ts/quotes": ["error", "double"],
+      "@stylistic/ts/quotes": ["error", "double", { avoidEscape: true }],
       "@stylistic/ts/semi": ["error", "never"],
       "@stylistic/ts/space-before-blocks": "error",
       "@stylistic/ts/space-before-function-paren": ["error", {
