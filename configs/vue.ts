@@ -9,6 +9,11 @@ const config: Linter.FlatConfig[] = [
   ...typescript as Linter.FlatConfig[],
   {
     files: ["**/*.vue"],
+    ignores: [
+      ".nuxt",
+      ".outpout",
+      ".vue"
+    ],
     languageOptions: {
       parser: vueParser,
       parserOptions: {
