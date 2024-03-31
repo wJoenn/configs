@@ -5,7 +5,7 @@ import base from "./base.js"
 export default tseslint.config(
   base,
   {
-    files: ["**/*.ts"],
+    files: ["**/*.ts", "**/*.vue"],
     languageOptions: {
       parser: tseslint.parser,
       parserOptions: {

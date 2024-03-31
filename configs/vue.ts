@@ -159,7 +159,7 @@ const config: Linter.FlatConfig[] = [
       "vue/no-side-effects-in-computed-properties": "error",
       "vue/no-spaces-around-equal-signs-in-attribute": "error",
       "vue/no-sparse-arrays": "error",
-      "vue/no-static-inline-styles": "error",
+      "vue/no-static-inline-styles": "off",
       "vue/no-template-key": "error",
       "vue/no-template-shadow": "error",
       "vue/no-template-target-blank": "off",
@@ -238,7 +238,7 @@ const config: Linter.FlatConfig[] = [
       "vue/v-for-delimiter-style": "error",
       "vue/v-if-else-key": "off",
       "vue/v-on-event-hyphenation": "error",
-      "vue/v-on-handler-style": "error",
+      "vue/v-on-handler-style": "off",
       "vue/v-on-style": "error",
       "vue/v-slot-style": "error",
       "vue/valid-attribute-name": "error",
@@ -264,6 +264,7 @@ const config: Linter.FlatConfig[] = [
       "vue/valid-v-slot": "error",
       "vue/valid-v-text": "error",
 
+      "@stylistic/js/function-call-spacing": "off",
       "@stylistic/js/indent": "off",
       "@stylistic/js/max-len": "off"
     }
