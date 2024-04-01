@@ -46,6 +46,15 @@ const config: Linter.FlatConfig[] = [
       "vue/component-api-style": ["error", ["script-setup"]],
       "vue/component-definition-name-casing": "error",
       "vue/component-name-in-template-casing": ["error", {
+        globals: [
+          "KeepAlive",
+          "RouterLink",
+          "RouterView",
+          "Suspense",
+          "Teleport",
+          "Transition",
+          "TransitionGroup"
+        ],
         registeredComponentsOnly: false
       }],
       "vue/component-options-name-casing": "error",
