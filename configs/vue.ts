@@ -92,7 +92,6 @@ const config: Linter.FlatConfig[] = [
       "vue/max-len": ["error", {
         code: 120,
         ignoreComments: true,
-        ignoreHTMLTextContents: true,
         ignorePattern: "^ +:?\\w+=\".+\"(?: \\/?>)?$",
         ignoreUrls: true
       }],
