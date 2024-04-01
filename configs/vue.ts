@@ -45,7 +45,9 @@ const config: Linter.FlatConfig[] = [
       "vue/comment-directive": ["error", { reportUnusedDisableDirectives: true }],
       "vue/component-api-style": ["error", ["script-setup"]],
       "vue/component-definition-name-casing": "error",
-      "vue/component-name-in-template-casing": "error",
+      "vue/component-name-in-template-casing": ["error", {
+        registeredComponentsOnly: false
+      }],
       "vue/component-options-name-casing": "error",
       "vue/custom-event-name-casing": "error",
       "vue/define-emits-declaration": "error",
