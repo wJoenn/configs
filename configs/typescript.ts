@@ -28,6 +28,7 @@ export default tseslint.config(
       "no-redeclare": "off",
       "no-shadow": "off",
       "no-throw-literal": "off",
+      "no-undef": "off",
       "no-unused-expressions": "off",
       "no-unused-vars": "off",
       "no-use-before-define": "off",
