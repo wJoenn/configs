@@ -45,7 +45,7 @@ const config: Linter.FlatConfig[] = [
       "vue/comment-directive": ["error", { reportUnusedDisableDirectives: true }],
       "vue/component-api-style": ["error", ["script-setup"]],
       "vue/component-definition-name-casing": "error",
-      "vue/component-name-in-template-casing": ["error", {
+      "vue/component-name-in-template-casing": ["error", "PascalCase", {
         globals: [
           "KeepAlive",
           "RouterLink",
