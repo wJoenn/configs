@@ -331,7 +331,7 @@ const config: Linter.FlatConfig = {
     "@stylistic/js/new-parens": ["error", "always"],
     "@stylistic/js/newline-per-chained-call": "off",
     "@stylistic/js/no-confusing-arrow": "off",
-    "@stylistic/js/no-extra-parens": "error",
+    "@stylistic/js/no-extra-parens": ["error", "functions"],
     "@stylistic/js/no-extra-semi": "error",
     "@stylistic/js/no-floating-decimal": "error",
     "@stylistic/js/no-mixed-operators": "error",

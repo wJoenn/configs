@@ -67,7 +67,7 @@ export default tseslint.config(
         multiline: { delimiter: "none" },
         singleline: { delimiter: "comma" }
       }],
-      "@stylistic/ts/no-extra-parens": "error",
+      "@stylistic/ts/no-extra-parens": ["error", "functions"],
       "@stylistic/ts/no-extra-semi": "error",
       "@stylistic/ts/object-curly-spacing": ["error", "always"],
       "@stylistic/ts/padding-line-between-statements": "off",
