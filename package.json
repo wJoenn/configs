@@ -29,7 +29,7 @@
     "@types/eslint": "^8.56.9",
     "@types/node": "^20.12.5",
     "bun": "^1.1.2",
-    "typescript": "^5.4.4"
+    "typescript": "^5.4.5"
   },
   "peerDependencies": {
     "eslint": ">= 8.57.0"
