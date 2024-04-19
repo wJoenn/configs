@@ -187,7 +187,12 @@ const config: Linter.FlatConfig[] = [
       "vue/no-unsupported-features": "off",
       "vue/no-unused-components": "error",
       "vue/no-unused-emit-declarations": "error",
-      "vue/no-unused-properties": "error",
+      "vue/no-unused-properties": ["error", {
+        deepData: false,
+        groups: ["props"],
+        ignorePublicMembers: false,
+        unreferencedOptions: []
+      }],
       "vue/no-unused-refs": "error",
       "vue/no-unused-vars": "error",
       "vue/no-use-computed-property-like-method": "error",
