@@ -334,7 +334,16 @@ const config: Linter.FlatConfig = {
     "@stylistic/js/no-extra-parens": ["error", "functions"],
     "@stylistic/js/no-extra-semi": "error",
     "@stylistic/js/no-floating-decimal": "error",
-    "@stylistic/js/no-mixed-operators": "error",
+    "@stylistic/js/no-mixed-operators": ["error", {
+      allowSamePrecedence: true,
+      groups: [
+        ["+", "-", "*", "/", "%", "**"],
+        ["&", "|", "^", "~", "<<", ">>", ">>>"],
+        ["==", "!=", "===", "!==", ">", ">=", "<", "<="],
+        ["&&", "||"],
+        ["in", "instanceof"]
+      ]
+    }],
     "@stylistic/js/no-mixed-spaces-and-tabs": "error",
     "@stylistic/js/no-multi-spaces": "error",
     "@stylistic/js/no-multiple-empty-lines": ["error", { max: 1 }],
