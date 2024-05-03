@@ -7,7 +7,7 @@ const config: Linter.FlatConfig[] = [
     files: ["**/*.vue"],
     ignores: [
       ".nuxt/**/*",
-      ".output/**/*",
+      ".output/**/*"
     ],
     rules: {
       "vue/component-name-in-template-casing": ["error", "PascalCase", {

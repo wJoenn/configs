@@ -214,7 +214,7 @@ export default tseslint.config(
         checkNumber: true,
         checkString: true,
         checkUnknown: true,
-        requireNullish: false,
+        requireNullish: false
       }],
       "@typescript-eslint/prefer-promise-reject-errors": "error",
       "@typescript-eslint/prefer-readonly": "error",
