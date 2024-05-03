@@ -9,9 +9,7 @@ const config: Linter.FlatConfig[] = [
   ...typescript as Linter.FlatConfig[],
   {
     ignores: [
-      ".nuxt",
-      ".outpout",
-      ".vue"
+      ".vue/**/*"
     ]
   },
   {

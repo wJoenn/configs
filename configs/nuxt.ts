@@ -5,6 +5,10 @@ const config: Linter.FlatConfig[] = [
   ...vue,
   {
     files: ["**/*.vue"],
+    ignores: [
+      ".nuxt/**/*",
+      ".output/**/*",
+    ],
     rules: {
       "vue/component-name-in-template-casing": ["error", "PascalCase", {
         globals: [
