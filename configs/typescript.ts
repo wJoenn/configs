@@ -90,7 +90,7 @@ export default tseslint.config(
       "@typescript-eslint/ban-types": "error",
       "@typescript-eslint/class-literal-property-style": "error",
       "@typescript-eslint/class-methods-use-this": "off",
-      "@typescript-eslint/comma-dangle": ["error", "never"],
+      "@typescript-eslint/comma-dangle": "off",
       "@typescript-eslint/consistent-generic-constructors": "error",
       "@typescript-eslint/consistent-indexed-object-style": "error",
       "@typescript-eslint/consistent-return": "off",
