@@ -171,9 +171,7 @@ export default tseslint.config(
         caughtErrors: "all",
         caughtErrorsIgnorePattern: "^$",
         destructuredArrayIgnorePattern: "^$",
-        ignoreClassWithStaticInitBlock: false,
         ignoreRestSiblings: true,
-        reportUsedIgnorePattern: false,
         vars: "all",
         varsIgnorePattern: "^$"
       }],
