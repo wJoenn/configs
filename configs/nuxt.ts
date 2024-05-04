@@ -4,11 +4,13 @@ import vue from "./vue.js"
 const config: Linter.FlatConfig[] = [
   ...vue,
   {
-    files: ["**/*.vue"],
     ignores: [
       ".nuxt/**/*",
       ".output/**/*"
-    ],
+    ]
+  },
+  {
+    files: ["**/*.vue"],
     rules: {
       "vue/component-name-in-template-casing": ["error", "PascalCase", {
         globals: [
