@@ -34,6 +34,12 @@ const config: Linter.FlatConfig[] = [
         registeredComponentsOnly: false
       }]
     }
+  },
+  {
+    files: ["server/**/*"],
+    rules: {
+      "import/extensions": "off"
+    }
   }
 ]
 
