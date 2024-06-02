@@ -55,7 +55,6 @@ const config: Linter.FlatConfig = {
     "id-length": "off",
     "id-match": "off",
     "init-declarations": "off",
-    "line-comment-position": "off",
     "logical-assignment-operators": "off",
     "max-classes-per-file": ["error", 1],
     "max-depth": ["error", 3],
@@ -64,7 +63,6 @@ const config: Linter.FlatConfig = {
     "max-nested-callbacks": ["error", 10],
     "max-params": "off",
     "max-statements": "off",
-    "multiline-comment-style": "off",
     "new-cap": ["error", {
       capIsNew: false,
       newIsCap: true
@@ -320,6 +318,7 @@ const config: Linter.FlatConfig = {
     "@stylistic/js/key-spacing": "error",
     "@stylistic/js/keyword-spacing": "error",
     "@stylistic/js/linebreak-style": ["error", "unix"],
+    "@stylistic/js/line-comment-position": "off",
     "@stylistic/js/lines-around-comment": "off",
     "@stylistic/js/lines-between-class-members": "off",
     "@stylistic/js/max-len": ["error", {
@@ -327,6 +326,7 @@ const config: Linter.FlatConfig = {
       ignoreUrls: true
     }],
     "@stylistic/js/max-statements-per-line": "off",
+    "@stylistic/js/multiline-comment-style": "off",
     "@stylistic/js/multiline-ternary": ["error", "never"],
     "@stylistic/js/new-parens": ["error", "always"],
     "@stylistic/js/newline-per-chained-call": "off",
