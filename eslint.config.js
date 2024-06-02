@@ -1,3 +1,3 @@
-import { typescript } from "./dist/index.js"
+import { nuxt } from "./dist/index.js"
 
-export default typescript
+export default nuxt

@@ -317,8 +317,8 @@ const config: Linter.FlatConfig = {
     "@stylistic/js/indent": ["error", 2],
     "@stylistic/js/key-spacing": "error",
     "@stylistic/js/keyword-spacing": "error",
-    "@stylistic/js/linebreak-style": ["error", "unix"],
     "@stylistic/js/line-comment-position": "off",
+    "@stylistic/js/linebreak-style": ["error", "unix"],
     "@stylistic/js/lines-around-comment": "off",
     "@stylistic/js/lines-between-class-members": "off",
     "@stylistic/js/max-len": ["error", {
