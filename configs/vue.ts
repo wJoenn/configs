@@ -183,7 +183,9 @@ const config: Linter.FlatConfig[] = [
       "vue/no-undef-components": "off",
       "vue/no-undef-properties": "error",
       "vue/no-unsupported-features": "off",
-      "vue/no-unused-components": "error",
+      "vue/no-unused-components": ["error", {
+        ignoreWhenBindingPresent: true
+      }],
       "vue/no-unused-emit-declarations": "error",
       "vue/no-unused-properties": ["error", {
         deepData: false,
