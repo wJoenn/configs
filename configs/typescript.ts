@@ -131,7 +131,11 @@ export default tseslint.config(
       "@typescript-eslint/no-explicit-any": "error",
       "@typescript-eslint/no-extra-non-null-assertion": "error",
       "@typescript-eslint/no-extraneous-class": "error",
-      "@typescript-eslint/no-floating-promises": "error",
+      "@typescript-eslint/no-floating-promises": ["error", {
+        allowForKnownSafePromises: [],
+        ignoreIIFE: false,
+        ignoreVoid: true
+      }],
       "@typescript-eslint/no-for-in-array": "error",
       "@typescript-eslint/no-implied-eval": "error",
       "@typescript-eslint/no-import-type-side-effects": "error",
@@ -159,6 +163,7 @@ export default tseslint.config(
       "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
       "@typescript-eslint/no-unnecessary-condition": "error",
       "@typescript-eslint/no-unnecessary-qualifier": "error",
+      "@typescript-eslint/no-unnecessary-template-expression": "error",
       "@typescript-eslint/no-unnecessary-type-arguments": "error",
       "@typescript-eslint/no-unnecessary-type-assertion": "error",
       "@typescript-eslint/no-unnecessary-type-constraint": "error",
@@ -184,7 +189,6 @@ export default tseslint.config(
       "@typescript-eslint/no-use-before-define": ["error", { variables: false }],
       "@typescript-eslint/no-useless-constructor": "error",
       "@typescript-eslint/no-useless-empty-export": "error",
-      "@typescript-eslint/no-useless-template-literals": "error",
       "@typescript-eslint/no-var-requires": "error",
       "@typescript-eslint/non-nullable-type-assertion-style": "error",
       "@typescript-eslint/parameter-properties": ["error", {
