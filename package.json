@@ -16,7 +16,7 @@
     "release": "pnpm build && pnpm publish"
   },
   "dependencies": {
-    "@stylistic/eslint-plugin-js": "^2.2.2",
+    "@stylistic/eslint-plugin-js": "^2.3.0",
     "@stylistic/eslint-plugin-ts": "^2.2.2",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-promise": "^6.2.0",
